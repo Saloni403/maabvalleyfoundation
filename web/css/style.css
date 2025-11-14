@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+ 
 a{
     text-decoration: none !important;
 
@@ -525,4 +526,295 @@ color: #fff;
 }
 .footercompanyinfo p{
     line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+/* organic agriculture */
+ .smallbanner {
+      background: linear-gradient(rgba(0, 100, 0, 0.6), rgba(0, 100, 0, 0.6)), url('organic-bg.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .smallbanner h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+
+    .smallbanner p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* concept section */
+     .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #006400;
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 4px;
+      background-color: #32a852;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 5px;
+    }
+
+   
+
+  
+/* core focus area */
+ .focus-areas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 30px;
+    }
+
+    .focus-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .focus-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .focus-card i {
+      font-size: 2.5rem;
+      color: #32a852;
+      margin-bottom: 15px;
+    }
+
+   
+   
+
+    /* Scroll Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* contact form */
+    form{
+      width: 80%;
+    }
+    @media (max-width:992px) {
+       form{
+      width: 100%;
+    }
+    }
+   .enqform{
+    background-image: url(../images/homebannerimg\ \(4\).jpeg);
+    background-position: center;
+    background-size: cover;
+
+   }
+   .enqform > div{
+    background-color: #000000a1;
+   }
+
+form input,
+form textarea,
+form select {
+  border-radius: 10px;
+  border: none;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(16, 117, 60, 0.4);
+}
+
+
+
+/* agroturism */
+.keycompdiv{
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(128, 128, 128, 0.437);
+}
+.keycomptext{
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  padding: 1rem;
+  color: #fff;
+  transition:0.6s;
+  background-color: rgba(0, 0, 0, 0.612);
+ width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width:375px) {
+  .keycomptext{
+    bottom: -70px;
+     padding: 0.75rem;
+  }
+}
+.keycompimg img{
+  transition: 0.6s;
+}
+.keycompdiv:hover{
+  box-shadow: 0 4px 16px grey;
+}
+.keycompdiv:hover .keycompimg img{
+  transform: rotate(5deg) scale(1.2);
+}
+.keycompdiv:hover .keycomptext{
+   bottom: 0;
+}
+
+
+/* community join */
+.servicecard{
+    /* border: 2px solid red; */
+     box-shadow: 0px 4px 16px rgba(128, 128, 128, 0.379);
+    border-top: 5px solid rgb(252, 176, 63);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.demo{
+    position: relative;
+}
+.servicecardicon1{
+    padding: 1rem 0.5rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 1rem;
+    border-radius: 10px;
+    border:3px solid rgb(252, 176, 63);
+    background-color: #fff;
+    transition: 0.6s;
+}
+.servicecardicon2{
+     padding: 0.6rem 1rem;
+    position: absolute;
+    bottom: 50px;
+    /* transform: translateY(15%); */
+    left: 1rem;
+    border-radius: 50%;
+    border:3px solid rgb(252, 176, 63);
+    background-color: #fff;
+}
+.servicecardicon2 i{
+    font-size: 1.5rem;
+}
+.servicecard:hover .servicecardicon1{
+    transform:translateY(-50%) rotate3d(0,1,0,180deg);
+     background-color: rgb(252, 176, 63);
+}
+.servicecardimg img{
+ border-radius: 0 0 10px 10px; 
+ transition: 0.6s; 
+
+}
+.servicecardimg{
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+.servicecardimg::after{
+    content: "";
+   background: linear-gradient(110deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 70%);
+    transform: translateX(-100%) skewX(-15deg);
+    transition: transform 0.6s 
+ease;
+    z-index: 99;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+border-radius: 0 0 10px 10px;
+}
+.servicecard:hover .servicecardimg::after{
+ transform: translateX(100%) skewX(-15deg);
+}
+.servicecard:hover .servicecardimg img{
+    transform:rotate(3deg) scale(1.1);
+}
+.servicecard .firstmainheading{
+    font-size: 1.5rem;
+    color: rgb(16, 117, 60);
+    transition: 0.3s;
+}
+
+.servicecard:hover .firstmainheading{
+    color: rgb(252, 176, 63);
+}
+
+
+
+
+.gvnpln {
+  position: relative;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  cursor: pointer;
+}
+
+.gvnpln:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 4px;
+border-radius: 10px;
+  /* background: linear-gradient( red, yellow); */
+   background: conic-gradient(from 0deg at center, red, yellow, green);
+z-index: -1;
+top: -8px;
+left: -8px;
+/* height: calc(100% + 16px);
+width: calc(100% + 16px); */
+  animation: moveborder 10s linear infinite;
+}
+
+
+@keyframes moveborder {
+  0%{
+    transform: rotate(0deg) scale(4);
+  }
+  100%{
+    transform: rotate(360deg) scale(4);
+  }
 }
