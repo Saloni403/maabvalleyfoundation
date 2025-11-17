@@ -478,6 +478,46 @@ background-image:  linear-gradient(to bottom, #82bf42, #65ad42, #4a9b41, #30883f
   transform: rotate3d(0,1,0,360deg);
 }
 
+.VisionofMV {
+  font-size: 18px;
+  position: relative;
+  padding: 20px 25px;
+  line-height: 1.6;
+}
+
+/* Add opening quote */
+.VisionofMV::before {
+  content: "“";
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  color: #4caf50;
+}
+
+/* Add closing quote */
+.VisionofMV::after {
+  content: "”";
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  color: #4caf50;
+}
+
+/* Optional: make layout prettier */
+.myvision-section img {
+  border-radius: 0 100px 0 100px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+}
+
+.myvision-section h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
 
 /* footer */
 .footercompanyinfo img{
