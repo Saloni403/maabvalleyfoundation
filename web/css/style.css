@@ -198,7 +198,7 @@ font-size: 2rem;
     left: -350px;
     top: 0;
     z-index:99;
-background-color: #fffbe8;
+background-color: #fcf5e2;
 transition: 0.3s;
 overflow-y: scroll;
 border-right: 2px solid rgb(252, 176, 63);
@@ -280,7 +280,7 @@ position: fixed;
 }
 }
 header .container{
-    background-color: #fffbe8;
+    background-color: #fcf5e2;
     border-radius: 10px;
     padding: 0.5rem;
     box-shadow: 0px 4px 16px rgba(101, 101, 101, 0.427);
@@ -723,8 +723,10 @@ form select:focus {
 }
 .keycomptext{
   position: absolute;
-  bottom: -50px;
+  bottom: 0;
   left: 0;
+  /* transform: translateY(calc(50% + 8px)); */
+  transform: translateY(50%);
   padding: 1rem;
   color: #fff;
   transition:0.6s;
@@ -732,9 +734,11 @@ form select:focus {
  width: 100%;
   border-radius: 0 0 10px 10px;
 }
+.keycomptext p{
+margin-bottom: 0;
+}
 @media (max-width:375px) {
   .keycomptext{
-    bottom: -70px;
      padding: 0.75rem;
   }
 }
@@ -748,7 +752,7 @@ form select:focus {
   transform: rotate(5deg) scale(1.2);
 }
 .keycompdiv:hover .keycomptext{
-   bottom: 0;
+   transform: translateY(0);
 }
 
 
@@ -764,7 +768,7 @@ form select:focus {
 .servicecardimg img{
  border-radius: 0 0 10px 10px; 
  transition: 0.6s; 
-
+/* aspect-ratio: 3/2; */
 }
 .servicecardimg{
     border-radius: 0 0 10px 10px;
@@ -810,8 +814,7 @@ border-radius: 0 0 10px 10px;
   padding: 20px;
   background: white;
   border-radius: 10px;
-  /* overflow: hidden; */
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .gvnpln:before {
