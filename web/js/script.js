@@ -1,5 +1,11 @@
 function openMenu(){
-    document.querySelector(".menu").classList.toggle("open")
+   const menu = document.querySelector(".menu")
+   menu.classList.toggle("open")
+      if (menu.classList.contains("open")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
 }
 
 window.addEventListener("scroll", function() {
