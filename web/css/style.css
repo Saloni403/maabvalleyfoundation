@@ -274,11 +274,7 @@ position: fixed;
     transform: translateY(0); /* 👈 smooth drop-down effect */
 
 }
-@media (max-width:576px) {
-    header.sticky{
-   top: 0;
-}
-}
+
 header .container{
     background-color: #fcf5e2;
     border-radius: 10px;
@@ -348,12 +344,15 @@ header{
 
 @media (max-width:576px) {
 header{
-   position: relative;
+   /* position: relative; */
    left: 0;
    transform: none;
 }
 header .container{
     border-radius: 0;
+}
+    header.sticky{
+   top: 0;
 }
 }
 .mainheader li{
@@ -418,7 +417,7 @@ object-fit: cover;
 
 @media (min-width:576px) {
   .msolp{
- transform: translateY(-100px);
+ transform: translateY(-50px);
 }
 }
 .cardbgcol1{
@@ -585,20 +584,29 @@ color: #fff;
 
 
 
-
-
+.bannerss{
+  padding: 120px 0 80px 0;
+  background-color: #fcf5e2;
+  text-align: center;
+}
+.bannerss h1{
+  font-size: 4vmax;
+  padding: 0 1rem;
+}
+.bannerss h1 span{
+  color: rgb(252, 176, 63);
+}
 
 /* organic agriculture */
  .smallbanner {
       /* background: linear-gradient(rgba(0, 100, 0, 0.6), rgba(0, 100, 0, 0.6)), url('organic-bg.jpg') center/cover no-repeat; */
-      background-image: url(../images/homebannerimg\ \(4\).jpeg);
-      color: white;
+background-color: #fcf5e2;
       text-align: center;
-      padding: 120px 20px;
+      padding: 100px 0 1rem 0;
       position: relative;
     }
 
-    .smallbanner::after{
+    /* .smallbanner::after{
       content: "";
       position: absolute;
       height: 100%;
@@ -607,7 +615,7 @@ color: #fff;
       top: 0;
       background-color: #00000089;
       z-index: 0;
-    }
+    } */
 
     .smallbanner h1 {
       font-size: 2.8rem;
